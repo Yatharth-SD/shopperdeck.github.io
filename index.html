@@ -1,42 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ShopperDeck - Meet Our Partners</title>
-<style>
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  body, html { height: 100%; }
-  body { font-family: Arial, sans-serif; display: flex; flex-direction: column; }
-  .header { background-color: black; color: white; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
-  .header h1 { margin: 0; }
-  .store-front { background: grey; color: white; border: none; padding: 10px 20px; cursor: pointer; }
-  .partners { flex-grow: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 20px 0; }
-  .partners h1 { margin-bottom: 30px; }
-  .logo { width: 200px; margin: 20px; }
-  .contact { background-color: #f5f5f5; padding: 30px; text-align: center; line-height: 25px; }
-  .partners-logo-list {padding: 20px; display: flex; justify-content: space-between; align-items: center;}
-</style>
-</head>
-<body>
-
-<div class="header">
-  <h1>SHOPPERDECK</h1>
-  <button class="store-front" onclick="window.open('https://www.amazon.com/s?me=A2LPGB21TWE87&marketplaceID=ATVPDKIKX0DER', '_blank');">Our Store Front</button>
-</div>
-
-<div class="partners">
-  <h1>Meet Our Partners</h1>
-  <div class="partners-logo-list">
-    <div><img src="ee-distribution-logo.png" alt="EE Distribution Logo" class="logo"></div>
-    <div><img src="faire-logo.png" alt="Faire Logo" class="logo"></div>
-  </div>
-</div>
-
-<div class="contact">
-  <p>Contact</p>
-  <a href="mailto:support@shopperdeck.com">support@shopperdeck.com</a>
-</div>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Shopperdeck</title>
+    <meta name="description" content="Shopperdeck website" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Shopperdeck website" />
+    <!-- <link rel="stylesheet" href="/_astro/about.DRv9-Cvf.css" /> -->
+    <link rel="stylesheet" href="css/tailwind.min.css" />
+  </head>
+  <body>
+    <div class="max-w-screen-xl mx-auto px-5">
+      <header
+        class="flex flex-col lg:flex-row justify-between items-center my-5"
+      >
+        <div class="flex w-full lg:w-auto items-center justify-between">
+          <a class="text-lg"
+            ><span class="font-bold text-slate-800">Shopper</span
+            ><span class="text-slate-500">deck</span>
+          </a>
+        </div>
+      </header>
+    </div>
+    <div class="max-w-screen-xl mx-auto px-5">
+      <main
+        class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24"
+      >
+        <div class="py-6 md:order-1 hidden md:block">
+          <picture>
+            <img
+              src="assets/logo.png"
+              alt="Shopperdeck"
+              sizes="(max-width: 800px) 100vw, 620px"
+              loading="eager"
+              width="520"
+              height="424"
+              decoding="async"
+            />
+          </picture>
+        </div>
+        <div>
+          <h1
+            class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter"
+          >
+            Helping Brand Meet Loyal Customers
+          </h1>
+          <p class="text-lg mt-4 text-slate-600 max-w-xl">
+            Why Choose Us? We're deeply committed to our business and here for
+            the long haul. We build trust with customers and create a safe
+            environment, allowing you to focus on what you do best—crafting
+            exceptional products—while we handle the sales and connections.
+          </p>
+        </div>
+      </main>
+      <div class="mt-16 md:mt-0">
+        <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+          Everything you need is here!
+        </h2>
+      </div>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+        <div class="flex gap-4 items-start">
+          <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              class="text-white"
+              data-icon="bx:bxs-briefcase"
+            >
+              <symbol id="ai:bx:bxs-briefcase">
+                <path
+                  d="M20 6h-3V4c0-1.103-.897-2-2-2H9c-1.103 0-2 .897-2 2v2H4c-1.103 0-2 .897-2 2v3h20V8c0-1.103-.897-2-2-2zM9 4h6v2H9V4zm5 10h-4v-2H2v7c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-7h-8v2z"
+                  fill="currentColor"
+                />
+              </symbol>
+              <use xlink:href="#ai:bx:bxs-briefcase"></use>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">Win-Win For Everyone</h3>
+            <p class="text-slate-500 mt-2 leading-relaxed">
+              We connect you with customers who genuinely love, appreciate, and
+              are excited about your products, ensuring meaningful engagement
+              and loyalty.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start">
+          <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              class="text-white"
+              data-icon="bx:bxs-window-alt"
+            >
+              <symbol id="ai:bx:bxs-window-alt">
+                <path
+                  d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm-3 3h2v2h-2V6zm-3 0h2v2h-2V6zM4 19v-9h16.001l.001 9H4z"
+                  fill="currentColor"
+                />
+              </symbol>
+              <use xlink:href="#ai:bx:bxs-window-alt"></use>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">100% Customer Satisfaction</h3>
+            <p class="text-slate-500 mt-2 leading-relaxed">
+              We are committed to ensuring 100% customer satisfaction with every
+              purchase, delivering a seamless and exceptional shopping
+              experience.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start">
+          <div class="mt-1 bg-black rounded-full p-2 w-8 h-8 shrink-0">
+            <svg
+              width="1em"
+              height="1em"
+              viewBox="0 0 24 24"
+              class="text-white"
+              data-icon="bx:bxs-data"
+            >
+              <symbol id="ai:bx:bxs-data">
+                <path
+                  d="M20 6c0-2.168-3.663-4-8-4S4 3.832 4 6v2c0 2.168 3.663 4 8 4s8-1.832 8-4V6zm-8 13c-4.337 0-8-1.832-8-4v3c0 2.168 3.663 4 8 4s8-1.832 8-4v-3c0 2.168-3.663 4-8 4z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M20 10c0 2.168-3.663 4-8 4s-8-1.832-8-4v3c0 2.168 3.663 4 8 4s8-1.832 8-4v-3z"
+                  fill="currentColor"
+                />
+              </symbol>
+              <use xlink:href="#ai:bx:bxs-data"></use>
+            </svg>
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">Community</h3>
+            <p class="text-slate-500 mt-2 leading-relaxed">
+              Join our community where customers shop with ease while we handle
+              everything else.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-24">
+        <h2 class="text-center text-slate-500">Product Categories We Sell</h2>
+        <div
+          class="flex gap-8 md:gap-20 items-center justify-center mt-10 flex-wrap"
+        >
+          <img src="assets/toys.png" width="40px" height="40px" />
+          <img src="assets/shoes.png" width="40px" height="40px" />
+          <img src="assets/clothes.png" width="40px" height="40px" />
+          <img src="assets/electronics.png" width="40px" height="40px" />
+          <img src="assets/supplements.png" width="40px" height="40px" />
+        </div>
+      </div>
+      <div
+        class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center"
+      >
+        <h2 class="text-white text-4xl md:text-6xl tracking-tight">
+          Become Our Partner
+        </h2>
+        <p class="text-slate-400 mt-4 text-lg text-white md:text-xl">
+          Focus on building your product while we handle the sales for you.
+        </p>
+        <div class="flex mt-5">
+          <a
+            href="#"
+            class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white text-black border-2 border-transparent"
+            >Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="my-20">
+      <p class="text-center text-sm text-slate-500">
+        Copyright © 2024 Shopperdeck. All rights reserved.
+      </p>
+      <p class="text-center text-xs text-slate-500 mt-1">Made by Shopperdeck</p>
+    </footer>
+  </body>
 </html>
